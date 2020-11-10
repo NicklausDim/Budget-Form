@@ -3,16 +3,15 @@ body {
     width: 80vw;
     margin: auto;
     background-image: url(back.jpg);
-
+    border: 5px solid white;
 }
 
 #exp {
     height: 10vh;
-    background: linear-gradient(to right,rgb(233, 118, 137),white);
 }
 table {
     border: 1px solid blueviolet;
-    background-color: rgba(204, 123, 123, 0.918);
+    background: linear-gradient(to right,rgb(230, 206, 103),rgb(241, 241, 239));
     margin: auto;
     width: 70vw;
     height: 50vh;
@@ -23,21 +22,29 @@ th, td {
 #budget {
     width: 40vw;
     background: linear-gradient(to right,rgb(235, 124, 20),rgb(40, 235, 225));
+    border-radius: 10px;
 }
+#budget:hover {
+    width: 300px;
+    transition: 3s;
+    color: red;
+    background: linear-gradient(to right,rgb(145, 11, 150),rgb(227, 233, 233));
+
+}
+
 img {
-    width: 40vw;
-    height: 20vh;
+    width: 200px;
+    height: 150px;
+    clip-path: circle(70px at 130px 90px);
+
 }
 #amount {
     width: 10vw;
-    background: linear-gradient(to right,rgb(233, 118, 137),white);
 }
 .box1 {
     width: 100vw;
 }
-#date {
-    background: linear-gradient(to right,rgb(233, 118, 137),white);
-}
+
 .bg {
     background-image: url(back.jpg);
     width: 100vh;
@@ -53,4 +60,20 @@ img {
     background-size: 800px 100%;
     background-position: 50% 100%;
     background-repeat: no-repeat;
+}
+
+@media only screen and (max-width: 600px) {
+    .div1 {
+        background-color: rgba(235, 64, 52, 0.404);
+    }
+    #budget {
+        width: 40vw;
+        background: linear-gradient(to right,rgb(254, 255, 255),rgb(40, 235, 225));
+    }
+    table {
+        background: linear-gradient(to right,rgb(254, 255, 255),rgb(40, 235, 225));
+    }
+    .bg-items, h1 {
+        background: linear-gradient(to right,rgb(254, 255, 255),rgb(40, 235, 225));
+    }
 }
